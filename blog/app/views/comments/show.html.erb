@@ -10,10 +10,12 @@
   <%= @comment.author %>
 </p>
 
+<div class = "boxed">
 <p>
   <strong>Blogpost:</strong>
   <%= @comment.blogpost_id %>
 </p>
+</div>
 
 <%= link_to 'Edit', edit_comment_path(@comment) %> |
 <%= link_to 'Back', comments_path %>
