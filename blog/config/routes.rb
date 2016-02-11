@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  get 'static_page/home'
+
   get 'spellcheck/:term' => 'dictionary_words#spellcheck'
 
   resources :comments
   resources :blogposts
+  #resources :
   root 'blogposts#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
